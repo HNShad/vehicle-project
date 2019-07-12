@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-discovery" />
+        <module name="data-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="12" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="data-service" options="-parameters" />
       <module name="service-discovery" options="-parameters" />
     </option>
   </component>
