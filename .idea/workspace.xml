@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebeb4dee-daa6-4b81-9f5d-f786eb1bae28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/controller/VehicleUiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui-service/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui-service/src/main/resources/templates/vehiclepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ebeb4dee-daa6-4b81-9f5d-f786eb1bae28" name="Default Changelist" comment="Fixing UI service module">
+      <change afterPath="$PROJECT_DIR$/ui-service/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/controller/VehicleDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/controller/VehicleDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/entity/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/repository/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/repository/VehicleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-discovery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-discovery/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/controller/VehicleUiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/controller/VehicleUiController.java" afterDir="false" />
     </list>
+    <list id="479df380-1151-4a4f-81c1-0a96a3ed2fc1" name="Adding filter by customer and status" comment="" />
+    <list id="3662eee0-8ba3-4a4c-8b65-61140ac5b93a" name="Fixing UI service module" comment="Fixing UI service module" />
+    <list id="1745361b-b5b7-4665-a3cf-3261483a6d3d" name="Revert &quot;Fixing UI service module&quot;" comment="Revert &quot;Fixing UI service module&quot;&#10;&#10;This reverts commit dceed8e2" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/service-discovery/target/" />
@@ -34,14 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/controller/VehicleUiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-389">
+              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -58,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/controller/VehicleDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="32" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="32" />
+            <state relative-caret-position="600">
+              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,10 +59,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/repository/VehicleRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui-service/src/main/resources/templates/vehiclepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state relative-caret-position="328">
+              <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -113,11 +125,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/data-service/pom.xml" />
         <option value="$PROJECT_DIR$/service-discovery/pom.xml" />
-        <option value="$PROJECT_DIR$/ui-service/pom.xml" />
         <option value="$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/controller/VehicleDataController.java" />
         <option value="$PROJECT_DIR$/data-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ui-service/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/ui-service/src/main/resources/templates/vehiclepage.html" />
+        <option value="$PROJECT_DIR$/ui-service/pom.xml" />
         <option value="$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/controller/VehicleUiController.java" />
       </list>
     </option>
@@ -177,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -224,14 +235,6 @@
             <path>
               <item name="vehicle-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="vehicle-project" type="462c0819:PsiDirectoryNode" />
-              <item name="data-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle-project" type="462c0819:PsiDirectoryNode" />
               <item name="ui-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,7 +256,7 @@
               <item name="ui-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vehicle-project" type="b2602c69:ProjectViewProjectNode" />
@@ -261,22 +264,14 @@
               <item name="ui-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uiservice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,7 +279,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="12" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ui-service/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ui-service" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -294,13 +289,14 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.hens.practise.vehicle.dataservice.controller" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hens.practise.vehicle.uiservice.model" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hens.practise.vehicle.uiservice.model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ui-service" />
       <recent name="$PROJECT_DIR$/ui-service/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/ui-service/src/main/resources/templates" />
     </key>
@@ -380,7 +376,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1366" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16362192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16362192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -393,14 +389,14 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32967034" />
       <window_info anchor="bottom" id="Console" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32981783" />
       <window_info anchor="bottom" id="DB Execution Console" order="12" />
@@ -494,7 +490,8 @@
     <MESSAGE value="Adding Database schema and data" />
     <MESSAGE value="Add Jpa Data Repository and Data Model" />
     <MESSAGE value="Create basic get APIs on data-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create basic get APIs on data-service" />
+    <MESSAGE value="Fixing UI service module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing UI service module" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data-service/src/main/resources/data.sql">
@@ -590,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -611,37 +601,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/UiServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/repository/VehicleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/UiServiceApplication.java" />
+    <entry file="file://$PROJECT_DIR$/ui-service/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/data-service/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -683,8 +644,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/controller/VehicleDataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="600">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -700,18 +661,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui-service/src/main/resources/templates/vehiclepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        <state relative-caret-position="328">
+          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui-service/src/main/java/com/hens/practise/vehicle/uiservice/controller/VehicleUiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="-389">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-service/src/main/java/com/hens/practise/vehicle/dataservice/repository/VehicleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -765,11 +752,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>vehicle-project</last-edited>
+          <last-edited>ui-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
