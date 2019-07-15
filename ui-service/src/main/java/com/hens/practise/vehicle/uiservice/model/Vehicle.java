@@ -1,32 +1,20 @@
-package com.hens.practise.vehicle.dataservice.model;
+package com.hens.practise.vehicle.uiservice.model;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "VEHICLE")
 public class Vehicle {
 
-    @Id
-    @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "VIN")
     private String vin;
 
-    @Column(name = "REGNR")
     private String regnr;
 
-    @Column(name = "CUSTOMER")
     private String customer;
 
-    @Column(name = "ADDRESS")
     private String address;
 
-    @Column(name = "STATUS")
     private String status;
 
-    public Vehicle() {
+    protected Vehicle() {
     }
 
     public Vehicle(long id, String vin, String regnr, String customer, String address, String status) {

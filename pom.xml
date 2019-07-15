@@ -12,6 +12,7 @@
     <modules>
         <module>service-discovery</module>
         <module>data-service</module>
+        <module>ui-service</module>
     </modules>
 
 

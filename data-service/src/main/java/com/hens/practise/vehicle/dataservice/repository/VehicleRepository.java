@@ -1,6 +1,6 @@
 package com.hens.practise.vehicle.dataservice.repository;
 
-import com.hens.practise.vehicle.dataservice.model.Vehicle;
+import com.hens.practise.vehicle.dataservice.entity.Vehicle;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

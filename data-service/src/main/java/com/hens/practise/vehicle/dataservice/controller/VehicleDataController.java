@@ -1,8 +1,10 @@
 package com.hens.practise.vehicle.dataservice.controller;
 
-import com.hens.practise.vehicle.dataservice.model.Vehicle;
+import com.hens.practise.vehicle.dataservice.entity.Vehicle;
 import com.hens.practise.vehicle.dataservice.repository.VehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,9 +21,9 @@ public class VehicleDataController {
 
 
     @GetMapping("/findall")
-    public List<Vehicle> getAllVehicles() {
+    public ResponseEntity<List<Vehicle>> getAllVehicles() {
 
-        return vehicleRepository.findAll();
+        return new ResponseEntity(vehicleRepository.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/customer/{customer}")
