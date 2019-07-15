@@ -32,19 +32,19 @@
                     </form>
                 </div>
             </div>
-<!--            <div class="col-sm">-->
-<!--                <div class="form-group">-->
-<!--                    <form th:action="@{find}" name='customer-form' method='get'>-->
-<!--                        <label for="customer">Select Customer:</label>-->
-<!--                        <select id="customer" name="customer" class="form-control" th:object="${customers}">-->
-<!--                            <option value=""></option>-->
-<!--                            <option th:each="customer : ${customers}" th:value="${customer}" th:text="${customer}">-->
-<!--                            </option>-->
-<!--                        </select>-->
-<!--                        <button type="submit" class="btn btn-info">Select Customer</button>-->
-<!--                    </form>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-sm">
+                <div class="form-group">
+                    <form th:action="@{/vehicles/find/findbycustomer}" name='customer-form' method='get'>
+                        <label for="customer">Select Customer:</label>
+                        <select id="customer" name="customer" class="form-control" th:object="${customers}">
+                            <option value=""></option>
+                            <option th:each="customer : ${customers}" th:value="${customer}" th:text="${customer}">
+                            </option>
+                        </select>
+                        <button type="submit" class="btn btn-info">Select Customer</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

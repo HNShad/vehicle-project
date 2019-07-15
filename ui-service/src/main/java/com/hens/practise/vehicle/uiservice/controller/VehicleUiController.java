@@ -5,11 +5,11 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
@@ -32,6 +32,8 @@ public class VehicleUiController {
 
         model.addAttribute("vehicles", responseEntity.getBody());
 
+        addCustomersToModel(model);
+
         return "vehiclepage";
     }
 
@@ -40,13 +42,44 @@ public class VehicleUiController {
                                      Model model) {
 
         if (StringUtils.isNotEmpty(status)) {
-            String uri = "http://data-service/vehicles/status/" + status;
-            ResponseEntity<List<Vehicle>> responseEntity = restTemplate.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<List<Vehicle>>() {
-            });
 
-            model.addAttribute("vehicels", responseEntity.getBody());
+            String uri = "http://data-service/vehicles/statuses?status=" + status;
+            ResponseEntity<List<Vehicle>> responseEntity =
+                    restTemplate.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<List<Vehicle>>() {});
+
+            model.addAttribute("vehicles", responseEntity.getBody());
         }
 
+        addCustomersToModel(model);
+
         return "vehiclepage";
+    }
+
+    @GetMapping("/find/findbycustomer")
+    public String getVehiclesByCustomer(@RequestParam("customer") String customer,
+                                        Model model) {
+
+        if (StringUtils.isNotEmpty(customer)) {
+
+            String uri = "http://data-service/vehicles/customers?customer=" + customer;
+            ResponseEntity<List<Vehicle>> responseEntity =
+                    restTemplate.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<List<Vehicle>>() {});
+
+            model.addAttribute("vehicles", responseEntity.getBody());
+        }
+
+        addCustomersToModel(model);
+
+        return "vehiclepage";
+    }
+
+    private void addCustomersToModel(Model model) {
+
+        String uri = "http://data-service/vehicles/customers/all";
+
+        ResponseEntity<List<String>> responseEntity =
+                restTemplate.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<List<String>>() {});
+
+        model.addAttribute("customers", responseEntity.getBody());
     }
 }
